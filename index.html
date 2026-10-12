@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gautam Buddha Nagar Vikas Samiti (GBNVS) | Non Profit Social Organization</title>
+  <meta name="description"
+    content="Gautam Buddha Nagar Vikas Samiti is a non profit social organization working with a collective developmental approach in education, healthcare, women empowerment, and rural development.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <div class="top-info">
+        <div class="top-info-item">
+          <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+          <span>Gautam Buddha Nagar, UP, India</span>
+        </div>
+        <div class="top-info-item">
+          <i data-lucide="mail" style="width: 14px; height: 14px;"></i>
+          <span>info@gbnvsamiti.org</span>
+        </div>
+        <div class="top-info-item">
+          <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+          <span>+91 98712 34567</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="tax-badge">✨ 80G Tax Exempted NGO</span>
+        <span style="color: #64748b;">|</span>
+        <a href="about.html" style="color: var(--primary-light); font-weight: 700;">FCRA Registered</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo.jpg" alt="गौतमबुद्ध नगर विकास समिति Logo"
+          style="height: 52px; width: auto; max-width: 180px; object-fit: contain; border-radius: 8px;">
+        <div class="brand-text">
+          <h1
+            style="font-size: 1.15rem; font-weight: 800; line-height: 1.15; color: var(--dark-bg); letter-spacing: -0.2px;">
+            गौतमबुद्ध नगर विकास समिति</h1>
+          <p
+            style="font-size: 0.72rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">
+            GBN VIKAS SAMITI</p>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="initiatives.html" class="nav-link">Our Initiatives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <div class="nav-item nav-dropdown">
+          <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+            Get Involved <i data-lucide="chevron-down" class="dropdown-icon"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="donate.html" class="dropdown-item">
+              <i data-lucide="heart" class="item-icon"></i>
+              <div>
+                <strong>Make a Donation</strong>
+                <span class="item-desc">Online Contribution Portal & 80G Receipt</span>
+              </div>
+            </a>
+            <a href="volunteer.html" class="dropdown-item">
+              <i data-lucide="users" class="item-icon"></i>
+              <div>
+                <strong>Volunteer With Us</strong>
+                <span class="item-desc">Register As A GBNVS Volunteer</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="media-events.html" class="nav-link">Media & Events</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i data-lucide="heart-handshake" style="width: 16px; height: 16px;"></i>
+          <span>Registered Non-Profit Organization</span>
+        </div>
+        <h1 class="hero-title">
+          Empowering Communities Through <span>Collective Development</span>
+        </h1>
+        <p class="hero-description">
+          Gautam Buddha Nagar Vikas Samiti is a non profit social organization. We are working with a collective
+          developmental approach to foster sustainable rural growth, grassroots education, and self-reliant livelihoods.
+        </p>
+        <div class="hero-actions">
+          <a href="donate.html" class="btn btn-accent">
+            <i data-lucide="heart"></i> Support Our Cause
+          </a>
+          <a href="initiatives.html" class="btn btn-outline-white">
+            <i data-lucide="arrow-right"></i> Explore Our Initiatives
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-img-card hero-slideshow-card" id="hero-slideshow">
+          <!-- Slide 1: Community Outreach -->
+          <div class="hero-slide active">
+            <img src="assets/images/hero_community.jpg" alt="GBNVS Community Outreach in Gautam Buddha Nagar">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-caption">
+              <i data-lucide="map-pin"></i> 45+ Villages • Community Drives
+            </div>
+          </div>
+
+          <!-- Slide 2: Primary Education -->
+          <div class="hero-slide">
+            <img src="assets/images/donation_impact_banner.jpg" alt="GBNVS Primary Education & Child Literacy">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-caption">
+              <i data-lucide="book-open"></i> Primary Education & Child Literacy
+            </div>
+          </div>
+
+          <!-- Slide 3: Youth Volunteers -->
+          <div class="hero-slide">
+            <img src="assets/images/volunteer_team_building.jpg" alt="GBNVS Youth Volunteer Team Movement">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-caption">
+              <i data-lucide="users"></i> 500+ Youth Volunteer Team Movement
+            </div>
+          </div>
+
+          <!-- Slide 4: Women Vocational Skills -->
+          <div class="hero-slide">
+            <img src="assets/images/women_empowerment.jpg" alt="GBNVS Women Vocational Skill Centers">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-caption">
+              <i data-lucide="sparkles"></i> Women Vocational Skill Centers
+            </div>
+          </div>
+
+          <!-- Slide 5: Free Health Camps -->
+          <div class="hero-slide">
+            <img src="assets/images/health_camp.jpg" alt="GBNVS Free Rural Health Camps">
+            <div class="hero-slide-overlay"></div>
+            <div class="hero-slide-caption">
+              <i data-lucide="activity"></i> Free Diagnostic & Health Camps
+            </div>
+          </div>
+
+          <!-- Slideshow Controls -->
+          <button type="button" class="hero-slide-nav hero-slide-prev" id="hero-slide-prev" aria-label="Previous Slide">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <button type="button" class="hero-slide-nav hero-slide-next" id="hero-slide-next" aria-label="Next Slide">
+            <i data-lucide="chevron-right"></i>
+          </button>
+
+          <!-- Slideshow Indicator Dots -->
+          <div class="hero-slide-dots" id="hero-slide-dots"></div>
+        </div>
+
+        <div class="floating-impact-badge">
+          <div class="badge-icon">
+            <i data-lucide="users"></i>
+          </div>
+          <div class="badge-text">
+            <h4>25,000+ Lives</h4>
+            <p>Positively Impacted Across 45+ Villages</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Counter Bar -->
+  <section class="impact-stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i data-lucide="book-open"></i>
+          </div>
+          <div class="stat-info">
+            <h3 data-counter="8500" data-suffix="+">8,500+</h3>
+            <p>Children Educated</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div class="stat-info">
+            <h3 data-counter="3200" data-suffix="+">3,200+</h3>
+            <p>Women Empowered</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i data-lucide="trees"></i>
+          </div>
+          <div class="stat-info">
+            <h3 data-counter="15000" data-suffix="+">15,000+</h3>
+            <p>Saplings Planted</p>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i data-lucide="activity"></i>
+          </div>
+          <div class="stat-info">
+            <h3 data-counter="140" data-suffix="+">140+</h3>
+            <p>Free Health Camps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collective Developmental Approach Framework Section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Operating Methodology</span>
+        <h2 class="section-title">Working With A Collective Developmental Approach</h2>
+        <p class="section-description">
+          We believe sustainable social transformation happens when grassroots communities, local self-governance,
+          healthcare professionals, and passionate volunteers unite under a common mission.
+        </p>
+      </div>
+
+      <div class="initiatives-grid">
+        <div class="initiative-card">
+          <div class="initiative-img-box">
+            <img src="assets/images/education.jpg" alt="Child Education Program">
+            <span class="initiative-category">Quality Education</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Shiksha Vikas Abhiyan</h3>
+            <p>Providing free evening learning centers, digital literacy classes, and school kits for rural
+              underprivileged children in Gautam Buddha Nagar.</p>
+            <div class="initiative-meta">
+              <span>Impact: 8,500+ Students</span>
+              <a href="initiatives.html#education" style="color: var(--primary);">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="initiative-card">
+          <div class="initiative-img-box">
+            <img src="assets/images/women_empowerment.jpg" alt="Women Skill Development">
+            <span class="initiative-category">Livelihoods</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Swayamsiddha Mahila Kendra</h3>
+            <p>Establishing self-help groups (SHGs) and vocational sewing & handicraft centers to make village women
+              financially independent.</p>
+            <div class="initiative-meta">
+              <span>Impact: 3,200+ Women</span>
+              <a href="initiatives.html#women" style="color: var(--primary);">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="initiative-card">
+          <div class="initiative-img-box">
+            <img src="assets/images/health_camp.jpg" alt="Free Medical Health Camps">
+            <span class="initiative-category">Rural Healthcare</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Aarogya Gram Seva</h3>
+            <p>Organizing free multi-specialty health camps, eye checkups, and hygiene awareness drives across remote
+              villages.</p>
+            <div class="initiative-meta">
+              <span>Impact: 140+ Health Camps</span>
+              <a href="initiatives.html#health" style="color: var(--primary);">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Philosophy & Approach Banner -->
+  <section class="section-padding approach-section">
+    <div class="container approach-grid">
+      <div>
+        <span class="section-subtitle" style="background: rgba(5, 150, 105, 0.2); color: var(--primary-light);">Why
+          GBNVS Stands Apart</span>
+        <h2 class="section-title" style="color: #ffffff;">Creating Lasting Grassroots Change Together</h2>
+        <p style="color: #cbd5e1; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">
+          Our non-profit model focuses on capacity building, active community participation, transparency, and
+          eco-friendly development. We don't just deliver aid; we build resilient local ecosystems.
+        </p>
+        <a href="about.html" class="btn btn-primary">
+          <i data-lucide="shield-check"></i> Read Our Mission & Vision
+        </a>
+      </div>
+
+      <div class="approach-card-list">
+        <div class="approach-card">
+          <div class="approach-icon"><i data-lucide="users-round"></i></div>
+          <h4>Community-Led</h4>
+          <p>Villagers and local youth take ownership of projects for permanent impact.</p>
+        </div>
+
+        <div class="approach-card">
+          <div class="approach-icon"><i data-lucide="receipt"></i></div>
+          <h4>100% Transparent</h4>
+          <p>Audited financial reporting & 80G tax exemption for every rupee donated.</p>
+        </div>
+
+        <div class="approach-card">
+          <div class="approach-icon"><i data-lucide="leaf"></i></div>
+          <h4>Eco-Conscious</h4>
+          <p>Integrating green tree drives and clean energy in all village initiatives.</p>
+        </div>
+
+        <div class="approach-card">
+          <div class="approach-icon"><i data-lucide="target"></i></div>
+          <h4>Measurable Results</h4>
+          <p>Data-driven developmental milestones monitored continuously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Testimonials Section -->
+  <section class="section-padding bg-light" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Voices of Grassroots Change</span>
+        <h2 class="section-title">What Our Community & Volunteers Say</h2>
+        <p class="section-description">
+          Real stories of empowerment, educational transformation, and village welfare from the beneficiaries and
+          change-makers working hand-in-hand with Gautam Buddha Nagar Vikas Samiti.
+        </p>
+      </div>
+
+      <!-- Testimonial Carousel -->
+      <div class="testimonial-carousel-wrapper">
+        <button class="carousel-nav-btn carousel-prev" id="testimonial-prev" aria-label="Previous Testimonials">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="carousel-nav-btn carousel-next" id="testimonial-next" aria-label="Next Testimonials">
+          <i data-lucide="chevron-right"></i>
+        </button>
+
+        <div class="testimonial-carousel-viewport">
+          <div class="testimonial-carousel-track" id="testimonial-track">
+
+            <!-- Slide 1: Sunita Devi -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(5, 150, 105, 0.12); color: var(--primary);">
+                    Women Empowerment
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “GBNVS brought a true turning point to our village. Through their free vocational sewing and craft
+                    training center, over 35 women in our panchayat are now earning an independent living. Their health
+                    camps also helped our village elders get free checkups and medicines right at our doorstep.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #059669, #10b981);">
+                    SD
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Sunita Devi</h4>
+                    <p>Self-Help Group Leader • Jewar, GBN</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Rahul Sharma -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(245, 158, 11, 0.15); color: #d97706;">
+                    Youth Volunteer
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “Volunteering with Gautam Buddha Nagar Vikas Samiti changed my perspective on social service.
+                    Working alongside dedicated mentors on weekend literacy drives and plantation campaigns gave our
+                    youth team immense pride, camaraderie, and leadership experience.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                    RS
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Rahul Sharma</h4>
+                    <p>Youth Volunteer & Student • Greater Noida</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Master Rameshwar Dayal -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(2, 132, 199, 0.12); color: #0284c7;">
+                    Rural Education
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “The learning materials, school bags, and classroom benches provided by the Samiti made a tremendous
+                    impact on our primary school. Student attendance rose significantly, and village parents are
+                    actively encouraged to send their daughters to school regularly.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #0284c7, #2563eb);">
+                    RD
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Master Rameshwar Dayal</h4>
+                    <p>Headmaster, Primary School • Dadri Block</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Pooja Raghav -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(147, 51, 234, 0.12); color: #9333ea;">
+                    CSR Partnership
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “Our tech company collaborated with GBNVS for an environmental tree plantation and village digital
+                    camp. The ground execution, transparency, and warmth of the local villagers made it an unforgettable
+                    team experience. They make every contribution count.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #9333ea, #a855f7);">
+                    PR
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Pooja Raghav</h4>
+                    <p>Corporate CSR Lead • Sector 62, Noida</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Chaudhary Mahendra Singh -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(13, 148, 136, 0.12); color: #0d9488;">
+                    Village Community
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “Over decades I have seen various initiatives, but GBNVS stands out for genuine commitment. From
+                    solar village streetlights to emergency ration distribution and health screening, the Samiti has
+                    earned the deepest trust of our entire panchayat.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #0d9488, #14b8a6);">
+                    MS
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Chaudhary Mahendra Singh</h4>
+                    <p>Village Elder & Panchayat Member • Dankaur</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Dr. Anjali Verma -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div>
+                  <span class="testimonial-tag" style="background: rgba(225, 29, 72, 0.12); color: #e11d48;">
+                    Healthcare Outreach
+                  </span>
+                  <div class="testimonial-stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                  </div>
+                  <p class="testimonial-text">
+                    “Volunteering as a medical officer with GBNVS health camps has been deeply rewarding. Their
+                    volunteer management is stellar, enabling our team of doctors to screen over 600 villagers in a
+                    single weekend and distribute essential generic medications.”
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar" style="background: linear-gradient(135deg, #e11d48, #f43f5e);">
+                    AV
+                  </div>
+                  <div class="testimonial-info">
+                    <h4>Dr. Anjali Verma</h4>
+                    <p>Consultant Physician & Camp Partner • Noida</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Carousel Pagination Dots -->
+        <div class="carousel-dots" id="testimonial-dots"></div>
+      </div>
+
+      <!-- Bottom Community Callout -->
+      <div
+        style="margin-top: 3.5rem; background: linear-gradient(135deg, #064e3b 0%, #047857 100%); border-radius: 20px; padding: 2.5rem 3rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; box-shadow: 0 15px 35px rgba(5,150,105,0.22); border: 1px solid rgba(255,255,255,0.15);">
+        <div>
+          <span
+            style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: var(--accent-light); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px;">
+            <i data-lucide="users" style="width: 15px; height: 15px;"></i> Join Our Growing Movement
+          </span>
+          <h3 style="font-size: 1.45rem; font-weight: 800; color: #ffffff; margin-bottom: 4px;">
+            Be A Part of the Change in Gautam Buddha Nagar
+          </h3>
+          <p style="font-size: 0.95rem; color: #e2e8f0; margin: 0;">
+            Lend your skills and voice to empower 45+ villages across Gautam Buddha Nagar.
+          </p>
+        </div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="volunteer.html" class="btn btn-primary" style="padding: 12px 24px;">
+            <i data-lucide="user-plus"></i> Join As A Volunteer
+          </a>
+          <button type="button" class="btn btn-outline-white" onclick="openTestimonialFeedbackModal()"
+            style="padding: 12px 20px; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+            <i data-lucide="message-square-heart"></i> Share Feedback
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand-logo"
+          style="margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 12px;">
+          <img src="assets/images/logo.jpg" alt="गौतमबुद्ध नगर विकास समिति Logo"
+            style="height: 50px; width: auto; max-width: 180px; object-fit: contain; border-radius: 8px;">
+          <div class="brand-text">
+            <h1
+              style="font-size: 1.15rem; font-weight: 800; line-height: 1.15; color: #ffffff; letter-spacing: -0.2px;">
+              गौतमबुद्ध नगर विकास समिति</h1>
+            <p
+              style="font-size: 0.72rem; color: var(--primary-light); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">
+              GBN VIKAS SAMITI</p>
+          </div>
+        </a>
+        <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+          Gautam Buddha Nagar Vikas Samiti is a non profit social organization. We are working with a collective
+          developmental approach.
+        </p>
+        <p style="font-size: 0.85rem; color: var(--accent-light); font-weight: 700;">
+          Reg. No: GBN/NGO/2018/4892 | 80G & 12A Certified
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About GBNVS</a></li>
+          <li><a href="initiatives.html">Our Initiatives</a></li>
+          <li><a href="gallery.html">Photo & Video Gallery</a></li>
+          <li><a href="donate.html">Make a Donation</a></li>
+          <li><a href="volunteer.html">Volunteer With Us</a></li>
+          <li><a href="javascript:void(0)" onclick="openTestimonialFeedbackModal()"
+              style="color: var(--primary-light); font-weight: 700;">⭐ Share Feedback</a></li>
+          <li><a href="media-events.html">News & Events</a></li>
+          <li><a href="contact.html">Contact & Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Key Focus Areas</h4>
+        <ul class="footer-links">
+          <li><a href="initiatives.html#education">Child Literacy & Education</a></li>
+          <li><a href="initiatives.html#women">Women Skill Development</a></li>
+          <li><a href="initiatives.html#health">Free Rural Health Camps</a></li>
+          <li><a href="initiatives.html#environment">Green Tree Drives</a></li>
+          <li><a href="initiatives.html#rural">Village Infrastructure</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact HQ</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">📍 Sector 62, Noida, Gautam Buddha Nagar, Uttar Pradesh 201309
+        </p>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">📞 +91 98712 34567 / +91 98100 98765</p>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem;">✉️ contact@gbnvsamiti.org</p>
+        <!-- <a href="donate.html" class="btn btn-accent btn-sm">Donate Online</a> -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 GBNVS All Rights Reserved. | Built By <a href="https://www.amnsinfotech.com/"
+            target="_blank">AMNS Infotech</a></p>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">80G Certificate</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer">
+    <button class="drawer-close">&times;</button>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link active">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="initiatives.html" class="drawer-link">Our Initiatives</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+      <div class="drawer-dropdown">
+        <span class="drawer-link"
+          style="display: flex; align-items: center; justify-content: space-between; cursor: default;">Get Involved <i
+            data-lucide="chevron-down" style="width: 14px; height: 14px;"></i></span>
+        <div class="drawer-sublinks">
+          <a href="donate.html" class="drawer-sublink">
+            <i data-lucide="heart"></i> Make a Donation
+          </a>
+          <a href="volunteer.html" class="drawer-sublink">
+            <i data-lucide="users"></i> Volunteer With Us
+          </a>
+        </div>
+      </div>
+      <a href="media-events.html" class="drawer-link">Media & Events</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </div>
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <a href="volunteer.html" class="btn btn-accent" style="width: 100%;">Volunteer</a>
+    </div>
+  </div>
+  <div class="drawer-overlay"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>

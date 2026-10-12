@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Initiatives & Projects | Gautam Buddha Nagar Vikas Samiti (GBNVS)</title>
+  <meta name="description"
+    content="Explore GBNVS initiatives in child education, women empowerment, free health camps, environmental tree drives, and rural development in Gautam Buddha Nagar.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 10px 22px;
+      background: rgba(241, 245, 249, 0.8);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: var(--dark-bg);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <div class="top-info">
+        <div class="top-info-item">
+          <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+          <span>Gautam Buddha Nagar, UP, India</span>
+        </div>
+        <div class="top-info-item">
+          <i data-lucide="mail" style="width: 14px; height: 14px;"></i>
+          <span>info@gbnvsamiti.org</span>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="tax-badge">✨ 80G Tax Exempted NGO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo.jpg" alt="गौतमबुद्ध नगर विकास समिति Logo"
+          style="height: 52px; width: auto; max-width: 180px; object-fit: contain; border-radius: 8px;">
+        <div class="brand-text">
+          <h1
+            style="font-size: 1.15rem; font-weight: 800; line-height: 1.15; color: var(--dark-bg); letter-spacing: -0.2px;">
+            गौतमबुद्ध नगर विकास समिति</h1>
+          <p
+            style="font-size: 0.72rem; color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">
+            GBN VIKAS SAMITI</p>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="initiatives.html" class="nav-link active">Our Initiatives</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <div class="nav-item nav-dropdown">
+          <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+            Get Involved <i data-lucide="chevron-down" class="dropdown-icon"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="donate.html" class="dropdown-item">
+              <i data-lucide="heart" class="item-icon"></i>
+              <div>
+                <strong>Make a Donation</strong>
+                <span class="item-desc">Online Contribution Portal & 80G Receipt</span>
+              </div>
+            </a>
+            <a href="volunteer.html" class="dropdown-item">
+              <i data-lucide="users" class="item-icon"></i>
+              <div>
+                <strong>Volunteer With Us</strong>
+                <span class="item-desc">Register As A GBNVS Volunteer</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="media-events.html" class="nav-link">Media & Events</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="page-header-banner">
+    <div class="hero-bg-overlay"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <h1 class="page-title">Our Initiatives & Social Impact Projects</h1>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span style="color: #ffffff;">Our Initiatives</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Initiatives Catalog Section -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Grassroots Interventions</span>
+        <h2 class="section-title">Integrated Development In Action</h2>
+        <p class="section-description">
+          We work across key social domains to deliver long-lasting, sustainable improvements in rural livelihoods and
+          human dignity.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Initiatives</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="livelihoods">Women Livelihoods</button>
+        <button class="filter-btn" data-filter="health">Health & Hygiene</button>
+        <button class="filter-btn" data-filter="environment">Environment</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="project-grid">
+        <!-- Project 1: Education -->
+        <div class="initiative-card project-item" data-category="education" id="education">
+          <div class="initiative-img-box">
+            <img src="assets/images/education.jpg" alt="Shiksha Vikas Abhiyan Child Education">
+            <span class="initiative-category">Education</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Shiksha Vikas Abhiyan</h3>
+            <p>Free supplementary education centers operating in 22 villages. We provide learning kits, remedial classes
+              for board exams, and basic digital literacy for rural kids.</p>
+            <div
+              style="background: rgba(5, 150, 105, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 8,500+ children enrolled | 94% school retention rate.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Women Livelihoods -->
+        <div class="initiative-card project-item" data-category="livelihoods" id="women">
+          <div class="initiative-img-box">
+            <img src="assets/images/women_empowerment.jpg" alt="Swayamsiddha Women Vocational Skill Development">
+            <span class="initiative-category">Livelihoods</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Swayamsiddha Mahila Kendra</h3>
+            <p>Empowering rural women through vocational tailoring, sanitary napkin production units, and financial
+              literacy workshops to foster micro-entrepreneurship.</p>
+            <div
+              style="background: rgba(245, 158, 11, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 3,200+ women trained | 18 Active Self Help Groups.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+
+        <!-- Project 3: Health & Hygiene -->
+        <div class="initiative-card project-item" data-category="health" id="health">
+          <div class="initiative-img-box">
+            <img src="assets/images/health_camp.jpg" alt="Aarogya Gram Seva Health Camp">
+            <span class="initiative-category">Healthcare</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Aarogya Gram Seva</h3>
+            <p>Conducting monthly mobile medical checkup camps, distributing free essential medicines, anemia screening
+              for teenage girls, and maternal health awareness.</p>
+            <div
+              style="background: rgba(2, 132, 199, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 140+ Camps Conducted | 18,000+ Free Prescriptions.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+
+        <!-- Project 4: Environment -->
+        <div class="initiative-card project-item" data-category="environment" id="environment">
+          <div class="initiative-img-box">
+            <img src="assets/images/tree_plantation.jpg" alt="Harihara Green Tree Plantation Drive">
+            <span class="initiative-category">Environment</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Harihara Vasundhara Drive</h3>
+            <p>Large-scale afforestation and tree plantation drives across Gautam Buddha Nagar to combat industrial
+              emissions and preserve indigenous biodiversity.</p>
+            <div
+              style="background: rgba(5, 150, 105, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 15,000+ Native Saplings Planted & Maintained.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+
+        <!-- Project 5: Education / Digital -->
+        <div class="initiative-card project-item" data-category="education">
+          <div class="initiative-img-box">
+            <img src="assets/images/education.jpg" alt="Digital Literacy Mobile Bus">
+            <span class="initiative-category">Digital Education</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Gramin Computer Literacy</h3>
+            <p>Equipping rural schools with solar-powered computer labs and tablet computers to introduce coding and
+              basic IT skills to village youth.</p>
+            <div
+              style="background: rgba(5, 150, 105, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 12 School Solar Computer Labs Set Up.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+
+        <!-- Project 6: Health / Water -->
+        <div class="initiative-card project-item" data-category="health">
+          <div class="initiative-img-box">
+            <img src="assets/images/health_camp.jpg" alt="Clean Drinking Water RO Plants">
+            <span class="initiative-category">Clean Water</span>
+          </div>
+          <div class="initiative-body">
+            <h3>Shuddha Jal Abhiyan</h3>
+            <p>Installing community RO clean drinking water plants in fluorosis-affected villages in Jewar and Greater
+              Noida rural belts.</p>
+            <div
+              style="background: rgba(2, 132, 199, 0.08); padding: 12px; border-radius: var(--radius-sm); margin-bottom: 1rem; font-size: 0.85rem;">
+              <strong>Key Milestone:</strong> 8 Community Water Plants Installed.
+            </div>
+            <a href="volunteer.html" class="btn btn-primary btn-sm">Volunteer Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate CSR Partnership Banner -->
+  <section class="section-padding bg-light" style="border-top: 1px solid var(--border-color);">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="section-subtitle">CSR Partnerships</span>
+      <h2 class="section-title">Partner With GBNVS For Corporate Social Responsibility</h2>
+      <p class="section-description" style="margin-bottom: 2rem;">
+        We offer transparent CSR project implementation, quarterly impact reporting, 80G tax deductions, and NITI Aayog
+        Darpan compliance for corporate organizations in Gautam Buddha Nagar and NCR.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">
+          <i data-lucide="handshake"></i> Request CSR Proposal
+        </a>
+        <a href="volunteer.html" class="btn btn-outline">
+          <i data-lucide="users"></i> Corporate Employee Volunteer Day
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand-logo"
+          style="margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 12px;">
+          <img src="assets/images/logo.jpg" alt="गौतमबुद्ध नगर विकास समिति Logo"
+            style="height: 50px; width: auto; max-width: 180px; object-fit: contain; border-radius: 8px;">
+          <div class="brand-text">
+            <h1
+              style="font-size: 1.15rem; font-weight: 800; line-height: 1.15; color: #ffffff; letter-spacing: -0.2px;">
+              गौतमबुद्ध नगर विकास समिति</h1>
+            <p
+              style="font-size: 0.72rem; color: var(--primary-light); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">
+              GBN VIKAS SAMITI</p>
+          </div>
+        </a>
+        <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+          Gautam Buddha Nagar Vikas Samiti is a non profit social organization. We are working with a collective
+          developmental approach.
+        </p>
+        <p style="font-size: 0.85rem; color: var(--accent-light); font-weight: 700;">
+          Reg. No: GBN/NGO/2018/4892 | 80G & 12A Certified
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About GBNVS</a></li>
+          <li><a href="initiatives.html">Our Initiatives</a></li>
+          <li><a href="gallery.html">Photo & Video Gallery</a></li>
+          <li><a href="donate.html">Make a Donation</a></li>
+          <li><a href="volunteer.html">Volunteer With Us</a></li>
+          <li><a href="javascript:void(0)" onclick="openTestimonialFeedbackModal()"
+              style="color: var(--primary-light); font-weight: 700;">⭐ Share Feedback</a></li>
+          <li><a href="media-events.html">News & Events</a></li>
+          <li><a href="contact.html">Contact & Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Key Focus Areas</h4>
+        <ul class="footer-links">
+          <li><a href="initiatives.html#education">Child Literacy & Education</a></li>
+          <li><a href="initiatives.html#women">Women Skill Development</a></li>
+          <li><a href="initiatives.html#health">Free Rural Health Camps</a></li>
+          <li><a href="initiatives.html#environment">Green Tree Drives</a></li>
+          <li><a href="initiatives.html#rural">Village Infrastructure</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact HQ</h4>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">📍 Sector 62, Noida, Gautam Buddha Nagar, Uttar Pradesh 201309
+        </p>
+        <p style="font-size: 0.9rem; margin-bottom: 8px;">📞 +91 98712 34567 / +91 98100 98765</p>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem;">✉️ contact@gbnvsamiti.org</p>
+        <!-- <a href="donate.html" class="btn btn-accent btn-sm">Donate Online</a> -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 GBNVS All Rights Reserved. | Built By <a href="https://www.amnsinfotech.com/"
+            target="_blank">AMNS Infotech</a></p>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">80G Certificate</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer">
+    <button class="drawer-close">&times;</button>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-link">Home</a>
+      <a href="about.html" class="drawer-link">About Us</a>
+      <a href="initiatives.html" class="drawer-link active">Our Initiatives</a>
+      <a href="gallery.html" class="drawer-link">Gallery</a>
+      <div class="drawer-dropdown">
+        <span class="drawer-link"
+          style="display: flex; align-items: center; justify-content: space-between; cursor: default;">Get Involved <i
+            data-lucide="chevron-down" style="width: 14px; height: 14px;">
+            <\ /i>
+              <\ /span>
+                <div class="drawer-sublinks">
+                  <a href="donate.html" class="drawer-sublink">
+                    <i data-lucide="heart"></i> Make a Donation
+                  </a>
+                  <a href="volunteer.html" class="drawer-sublink">
+                    <i data-lucide="users"></i> Volunteer With Us
+                  </a>
+                </div>
+      </div>
+      <a href="media-events.html" class="drawer-link">Media & Events</a>
+      <a href="contact.html" class="drawer-link">Contact Us</a>
+    </div>
+  </div>
+  <div class="drawer-overlay"></div>
+
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+
+</html>
